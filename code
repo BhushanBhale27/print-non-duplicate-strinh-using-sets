@@ -1,0 +1,35 @@
+x = "aabbccddeeffgghhiis"
+let b = new Map();
+for(let i=0;i<x.length;i++){
+  if(b.get(x[i])==undefined)
+    b.set(x[i],1)
+  else
+    b.set(x[i],b.get(x[i])+1);
+  
+    
+}
+let str=""
+for(let i=0;i<x.length;i++){
+  if(b.get(x[i])==1)
+    str=str+x[i]
+}
+console.log(b);
+console.log(str);
+  
+  /*
+  
+  Map(10) {
+  'a' => 2,
+  'b' => 2,
+  'c' => 2,
+  'd' => 2,
+  'e' => 2,
+  'f' => 2,
+  'g' => 2,
+  'h' => 2,
+  'i' => 2,
+  's' => 1
+}
+s
+
+*/
